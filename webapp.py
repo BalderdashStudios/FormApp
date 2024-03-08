@@ -18,5 +18,9 @@ def render_page2():
 def render_page3():
     return render_template('page3.html')
     
+@app.route("/temp")
+def render_temp():
+    return render_template('RepairsForms/YearNumber.html')
+    
 if __name__=="__main__":
     app.run(debug=False)
