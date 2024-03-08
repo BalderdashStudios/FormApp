@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% set active_page = "page3" %}
+
+{% block title %}Page 3{% endblock %}
+
+{% block content %}
+    <!--page content-->
+    <h1>Repairs</h1>
+{% endblock %}
+
+{% block Form %}
+   <div class="container-fluid pt-5">
+		<h1>Please specify the type of proccesor your Mac uses.</h1>
+		<p>All Apple computers since the origional iMac have used either PPC, Intel, Or Apple Silicon (PPC being the oldest.) The name of your mac often reflects what proccesor its using.</p>
+		<div class="row">
+		  <div class="col">
+		   <form action="/action_page.php">
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="ppc" name="proccesor" value="ppc">PPC
+				<label class="form-check-label" for="ppc"></label>
+			</div>
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="intel" name="proccesor" value="intel">Intel
+				<label class="form-check-label" for="intel"></label>
+			</div>
+			<div class="form-check">
+				<input type="radio" class="form-check-input" disabled>Apple Silicon
+				<label class="form-check-label"></label>
+			</div>
+		   </form>
+		  </div>
+	    </div>
+   </div>
+{% endblock %}
