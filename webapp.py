@@ -22,12 +22,29 @@ def render_page3():
 def render_temp():
     return render_template('RepairsForms/YearNumber.html')
 
-@app.route("/yearNumber")
-def render_yearNumber():
+@app.route("/computerSelect")
+def render_PPCSelect():
     proccesor = request.args['proccesor']
     
-    return render_template('RepairsForms/YearNumber.html')
+    if proccesor == "ppc":
+        return render_template('RepairsForms/PPCSelect.html')
+    elif proccesor == "intel":
+        return render_template('RepairsForms/IntelSelect.html')
 
+@app.route("/modelSelect")
+def render_modelSelect():
+    macModel = request.args['macModel']
+    
+    if macModel == "iMacG3":
+        return render_template('RepairsForms/YearNumberG3.html')
+    elif macModel == "iMacG4":
+        return render_template('RepairsForms/IntelSelect.html')
+    elif macModel == "iMacG5":
+        return render_template('RepairsForms/IntelSelect.html')
+    elif macModel == "PowerMacG4":
+        return render_template('RepairsForms/IntelSelect.html')
+    elif macModel == "PowerMacG5":
+        return render_template('RepairsForms/IntelSelect.html')
 
 
     
