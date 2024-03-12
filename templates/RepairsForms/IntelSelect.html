@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% set active_page = "page3" %}
+
+{% block title %}Page 3{% endblock %}
+
+{% block content %}
+    <!--page content-->
+    <h1>Repairs</h1>
+{% endblock %}
+
+{% block Form %}
+   <div class="container-fluid pt-5">
+		<h1>Please specify what Intel mac you have.</h1>
+		<br>
+		<div class="row">
+		  <div class="col">
+		   <form action="/modelSelect">
+				<div class="form-check">
+					<input type="radio" class="form-check-input" id="iMacIntel" name="macModel" value="iMacIntel">iMac
+					<label class="form-check-label" for="macModel"></label>
+				</div>
+				<div class="form-check">
+					<input type="radio" class="form-check-input" id="MacMini" name="macModel" value="MacMini">Mac mini
+					<label class="form-check-label" for="macModel"></label>
+				</div>
+				<div class="form-check">
+					<input type="radio" class="form-check-input" id="Mac Pro" name="macModel" value="Mac Pro">Mac Pro
+					<label class="form-check-label" for="macModel"></label>
+				</div>
+			<input type="submit">
+			</form>
+	     </div>
+	  </div>
+    </div>
+{% endblock %}

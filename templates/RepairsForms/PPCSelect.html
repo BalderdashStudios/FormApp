@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% set active_page = "page3" %}
+
+{% block title %}Page 3{% endblock %}
+
+{% block content %}
+    <!--page content-->
+    <h1>Repairs</h1>
+{% endblock %}
+
+{% block Form %}
+   <div class="container-fluid pt-5">
+		<h1>Please specify what PPC mac you have.</h1>
+		<br>
+		<div class="row">
+		  <div class="col">
+		   <form action="/modelSelect">
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="iMacG3" name="macModel" value="iMacG3">iMac G3
+				<label class="form-check-label" for="macModel"></label>
+			</div>
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="iMacG4" name="macModel" value="iMacG4">iMac G4
+				<label class="form-check-label" for="macModel"></label>
+			</div>
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="iMacG5" name="macModel" value="iMacG5">iMac G5
+				<label class="form-check-label" for="macModel"></label>
+			</div>
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="PowerMacG4" name="macModel" value="PowerMacG4">PowerMac G4
+				<label class="form-check-label" for="macModel"></label>
+			</div>
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="PowerMacG5" name="macModel" value="PowerMacG5">PowerMac G5
+				<label class="form-check-label" for="macModel"></label>
+			</div>
+			<input type="submit">
+			</form>
+	     </div>
+	  </div>
+    </div>
+{% endblock %}
