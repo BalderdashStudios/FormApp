@@ -35,6 +35,7 @@ def render_PPCSelect():
 def render_modelSelect():
     macModel = request.args['macModel']
     
+    #PPC
     if macModel == "iMacG3":
         return render_template('RepairsForms/YearNumberG3.html')
     elif macModel == "iMacG4":
@@ -45,11 +46,42 @@ def render_modelSelect():
         return render_template('RepairsForms/IntelSelect.html')
     elif macModel == "PowerMacG5":
         return render_template('RepairsForms/IntelSelect.html')
-
+    #Intel
+    
+    
+    
+@app.route("/infoComputer")
+def render_infoComputer():
+    version = request.args['version']
+    
+    #PPC
+    if version == "1998OG":
+        title = "1998 iMac G3"
+        description = "The origional iMac."
+        actions = ""
+    elif version == "1998Late":
+        title = "Late 1998 iMac G3"
+        description = "The first revision of the iMac G3."
+        actions= ""
+    elif version == "1999OG":
+        title = "1999 iMac G3"
+        description = "This iMac G3 was the first revision to increase the clock speed of the Power PC G3 chip from 233 MHz to 266MHz."
+        actions = ""
+    elif version == "1999Early":
+        title = "333MHz 1999 iMac G3"
+        description = "This iMac G3 increased the clock speed of the Power PC G3 chip from 266 MHz to a whopping 333MHz."
+        actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
+        
+    return render_template('RepairsForms/iMacG3/iMacG3.html' , title = title, description = description, actions = actions)
+  
+    
+    
+    
+    
 
     
 if __name__=="__main__":
-    app.run(debug=False)
+    app.run(debug=True)
 
 
 #Dictionary
