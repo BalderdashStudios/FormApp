@@ -69,12 +69,12 @@ def render_infoComputer():
         title = "1999 iMac G3"
         description = "This iMac G3 was the first revision to increase the clock speed of the Power PC G3 chip from 233 MHz to 266MHz."
         actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
-        imageMac = "Imac_G3_Bondi_Blue_side.jpg"
+        imageMac = "Imac_G3_5_flavors_side_lineup.jpg"
     elif version == "1999Early":
         title = "333MHz 1999 iMac G3"
         description = "This iMac G3 increased the clock speed of the Power PC G3 chip from 266 MHz to a whopping 333MHz."
         actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
-        imageMac = "Imac_G3_Bondi_Blue_side.jpg"
+        imageMac = "Imac_G3_5_flavors_side_lineup.jpg"
     return render_template('RepairsForms/iMacG3/iMacG3.html' , title = title, description = description, actions = actions, imageMac = imageMac)
   
     
