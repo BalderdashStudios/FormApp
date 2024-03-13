@@ -54,7 +54,7 @@ def render_modelSelect():
 def render_infoComputer():
     version = request.args['version']
     
-    #PPC
+    #PPC G3
     if version == "1998OG":
         title = "1998 iMac G3"
         description = "The origional iMac."
@@ -71,6 +71,26 @@ def render_infoComputer():
         actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
         imageMac = "Imac_G3_5_flavors_side_lineup.jpg"
     elif version == "1999Early":
+        title = "333MHz 1999 iMac G3"
+        description = "This iMac G3 increased the clock speed of the Power PC G3 chip from 266 MHz to a whopping 333MHz."
+        actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
+        imageMac = "Imac_G3_5_flavors_side_lineup.jpg"
+    elif version == "1999SG":
+        title = "Second Generation iMac 1999"
+        description = "This was the first of the second generation of the iMac G3, the most noticble feature is the new slot loading CD/DVD drive."
+        actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
+        imageMac = "Imac_G3_Graphite_side.jpg"
+    elif version == "2000OG":
+        title = "333MHz 1999 iMac G3"
+        description = "This iMac G3 increased the clock speed of the Power PC G3 chip from 266 MHz to a whopping 333MHz."
+        actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
+        imageMac = "Imac_G3_5_flavors_side_lineup.jpg"
+    elif version == "2001OG":
+        title = "333MHz 1999 iMac G3"
+        description = "This iMac G3 increased the clock speed of the Power PC G3 chip from 266 MHz to a whopping 333MHz."
+        actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
+        imageMac = "Imac_G3_5_flavors_side_lineup.jpg"
+    elif version == "2001Late":
         title = "333MHz 1999 iMac G3"
         description = "This iMac G3 increased the clock speed of the Power PC G3 chip from 266 MHz to a whopping 333MHz."
         actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
