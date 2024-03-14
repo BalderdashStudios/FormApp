@@ -6,6 +6,11 @@
 	min-width:400px;
 }
 
+.Icon {
+	width: 50%;
+	min-width:100px;
+}
+
 .G3Background {
 	background-image: url('images/backgrounds/g3Background.jpg');
 	background-repeat: no-repeat;
@@ -20,4 +25,10 @@
 
 .AppleGaramond {
 	font-family: AppleGaramond;
+}
+
+.navBarCustom {
+    max-width: fit-content;
+	margin: auto;
+	background-color: #889abe;
 }

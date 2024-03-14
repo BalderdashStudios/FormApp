@@ -95,7 +95,35 @@ def render_infoComputer():
         description = "This was the last ever iMac G3 revision. It's G3 chip ranged from 500MHz to 700MHz."
         actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
         imageMac = "IMac_final_palette.png"
-    return render_template('RepairsForms/iMacG3/iMacG3.html' , title = title, description = description, actions = actions, imageMac = imageMac)
+    #PPC G4
+    elif version == "G4January2002":
+        title = "Origional iMac G4"
+        description = "The start of the shortest lived iMac design, some love it, others hate it."
+        actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
+        imageMac = "iMacG4.jpg"
+    elif version == "G4August2002":
+        title = "Origional iMac G4"
+        description = "The start of the shortest lived iMac design, some love it, others hate it."
+        actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
+        imageMac = "iMacG4.jpg"
+    elif version == "G4February2003":
+        title = "Origional iMac G4"
+        description = "The start of the shortest lived iMac design, some love it, others hate it."
+        actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
+        imageMac = "iMacG4.jpg"
+    elif version == "G4September2003":
+        title = "Origional iMac G4"
+        description = "The start of the shortest lived iMac design, some love it, others hate it."
+        actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
+        imageMac = "iMacG4.jpg"
+    elif version == "G4November2003":
+        title = "Final Revision iMac G4"
+        description = "The final iMac G4 revision untill Apple made the switch to the much more familir looking iMacG5"
+        actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
+        imageMac = "iMacG4.jpg"
+        
+        
+    return render_template('RepairsForms/ComputerInfo/CompInfo.html' , title = title, description = description, actions = actions, imageMac = imageMac)
   
     
     
