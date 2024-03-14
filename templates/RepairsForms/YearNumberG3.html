@@ -5,15 +5,20 @@
 {% block title %}Page 3{% endblock %}
 
 {% block content %}
-    <!--page content-->
-    <h1>Repairs</h1>
+	<div class="container-flex d-flex justify-content-center p-5">
+		<div class="row">
+			<div class="col">
+				<h1 class="AppleGaramond">Repairs.</h1>
+			</div>
+		</div>
+	</div>
 {% endblock %}
 
 {% block Form %}
    <div class="container">
-		<h1>Please specify the year/version of your iMac G3.</h1>
+		<h1 class="AppleGaramond">Please specify the year/version of your iMac G3.</h1>
 		<br>
-		<h2>First Generation 1998-99:</h2>
+		<h2 class="AppleGaramond">First Generation 1998-99:</h2>
 		<div class="row">
 		  <div class="col">
 		   <form action="/infoComputer">
@@ -35,7 +40,7 @@
 			</div>
 			
 				<br>
-				<h2>Second Generation Oct 1999-2001:</h2>
+				<h2 class="AppleGaramond">Second Generation Oct 1999-2001:</h2>
 			<div class="form-check">
 				<input type="radio" class="form-check-input" id="1999SG" name="version" value="1999SG">Oct 1999, 350 or 400 MHz
 				<label class="form-check-label" for="version"></label>

@@ -5,25 +5,30 @@
 {% block title %}Page 3{% endblock %}
 
 {% block content %}
-    <!--page content-->
-	<h1>Repairs</h1>
+	<div class="container-flex d-flex justify-content-center p-5">
+		<div class="row">
+			<div class="col">
+				<h1 class="AppleGaramond">Repairs.</h1>
+			</div>
+		</div>
+	</div>
 {% endblock %}
 
 {% block Form %}
    <div class="container-fluid pt-5">
-		<h1>Info on your {{title}}</h1>
+		<h1 class="AppleGaramond">Info on your {{title}}</h1>
 		<br>
 		<div class="row">
 		  <div class="float-start col">
 		    <img src="{{url_for('static',filename = 'images/ppcmacs/'+ imageMac)}}"class="w-30 mb-0 float-start ImageMac">
 	     </div>
 		 <div class="col">
-		    <h1>Description:</h1>
-		    <p>{{description}}</p>
+		    <h1 class="AppleGaramond">Description:</h1>
+		    <p class="AppleGaramond">{{description}}</p>
 	     </div>
 		 <div class="col">
-			<h1>Actions to take:</h1>
-		    <p>{{actions}}</p>
+			<h1 class="AppleGaramond">Actions to take:</h1>
+		    <p class="AppleGaramond">{{actions}}</p>
 	     </div>
 	  </div>
     </div>
