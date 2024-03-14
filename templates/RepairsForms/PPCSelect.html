@@ -10,9 +10,10 @@
 {% endblock %}
 
 {% block Form %}
-   <div class="container-fluid pt-5">
-		<h1>Please specify what PPC mac you have.</h1>
-		<br>
+   <div class="container">
+	   <div class="row">
+			<h1 class="AppleGaramond">Old school we like it, Please specify what PPC mac you have.</h1>
+	   </div>
 		<div class="row">
 		  <div class="col">
 		   <form action="/modelSelect">
@@ -36,7 +37,7 @@
 				<input type="radio" class="form-check-input" id="PowerMacG5" name="macModel" value="PowerMacG5">PowerMac G5
 				<label class="form-check-label" for="macModel"></label>
 			</div>
-			<input type="submit">
+			<input type="submit" class="btn btn-primary">
 			</form>
 	     </div>
 	  </div>

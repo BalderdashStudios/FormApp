@@ -10,10 +10,15 @@
 {% endblock %}
 
 {% block Form %}
-   <div class="container-fluid pt-5">
-		<h1>Please specify the type of proccesor your Mac uses.</h1>
-		<p>All Apple computers since the origional iMac have used either PPC, Intel, Or Apple Silicon (PPC being the oldest.) The name of your mac often reflects what proccesor its using.</p>
+   <div class="container">
 		<div class="row">
+			<h1>Please specify the type of proccesor your Mac uses.</h1>
+		</div>
+		<div class="row">
+			<p>All Apple computers since the origional iMac have used either PPC, Intel, Or Apple Silicon (PPC being the oldest.) The name of your mac often reflects what proccesor its using.</p>
+		</div>
+		
+	   <div class="row">
 		  <div class="col">
 		   <form action="/computerSelect">
 			<div class="form-check">
@@ -28,7 +33,7 @@
 				<input type="radio" class="form-check-input" disabled>Apple Silicon
 				<label class="form-check-label"></label>
 			</div>
-			<input type="submit">
+			<input type="submit" class="btn btn-primary">
 		   </form>
 		  </div>
 	    </div>
