@@ -39,7 +39,7 @@ def render_modelSelect():
     if macModel == "iMacG3":
         return render_template('RepairsForms/YearNumberG3.html')
     elif macModel == "iMacG4":
-        return render_template('RepairsForms/IntelSelect.html')
+        return render_template('RepairsForms/YearNumberG4.html')
     elif macModel == "iMacG5":
         return render_template('RepairsForms/IntelSelect.html')
     elif macModel == "PowerMacG4":

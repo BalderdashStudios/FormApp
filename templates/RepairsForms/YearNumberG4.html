@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% set active_page = "page3" %}
+
+{% block title %}Page 3{% endblock %}
+
+{% block content %}
+	<div class="container-flex d-flex justify-content-center p-5">
+		<div class="row">
+			<div class="col">
+				<h1 class="AppleGaramond">Repairs.</h1>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block Form %}
+   <div class="container">
+		<h1 class="AppleGaramond">Please specify the year/version of your iMac G4.</h1>
+		<br>
+		<h2 class="AppleGaramond">First Generation 1998-99:</h2>
+		<div class="row">
+		  <div class="col">
+		   <form action="/infoComputer">
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="G4January2002" name="version" value="G4January2002">January 2002
+				<label class="form-check-label" for="version"></label>
+			</div>
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="G4August2002" name="version" value="G4August2002">August 2002
+				<label class="form-check-label" for="version"></label>
+			</div>
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="G4February2003" name="version" value="G4February2003">February 4, 2003
+				<label class="form-check-label" for="version"></label>
+			</div>
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="G4September2003" name="version" value="G4September2003">September 8, 2003
+				<label class="form-check-label" for="version"></label>
+			</div>
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="G4November2003" name="version" value="G4November2003">November 18, 2003
+				<label class="form-check-label" for="version"></label>
+			</div>
+			<input type="submit" class="btn btn-primary">
+			</form>
+	     </div>
+	  </div>
+    </div>
+{% endblock %}
