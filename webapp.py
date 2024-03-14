@@ -84,17 +84,17 @@ def render_infoComputer():
         title = "2000 iMac G3"
         description = "This was the first iMac released in the 21st century. Woah."
         actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
-        imageMac = "Imac_G3_5_flavors_side_lineup.jpg"
+        imageMac = "Imac_G3_2000_rev_side_lineup.jpg"
     elif version == "2001OG":
         title = "2001 iMac G3"
         description = "These iMacs came in some intresting colors, if you've recently picked one of these up check if it's one of the rarier Blue Dalmatian or Flower Power colors."
         actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
-        imageMac = "Imac_G3_5_flavors_side_lineup.jpg"
+        imageMac = "IMac_G3_Flower_Power_and_Blue_Dalmatian.png"
     elif version == "2001Late":
         title = "Late 2001 iMac G3"
         description = "This was the last ever iMac G3 revision. It's G3 chip ranged from 500MHz to 700MHz."
         actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
-        imageMac = "Imac_G3_5_flavors_side_lineup.jpg"
+        imageMac = "IMac_final_palette.png"
     return render_template('RepairsForms/iMacG3/iMacG3.html' , title = title, description = description, actions = actions, imageMac = imageMac)
   
     
