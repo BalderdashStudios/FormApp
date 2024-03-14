@@ -5,3 +5,19 @@
 	width: 100%;
 	min-width:400px;
 }
+
+.G3Background {
+	background-image: url('images/backgrounds/g3Background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+@font-face {
+	font-family: AppleGaramond;
+	src: url(AppleGaramond-Light.ttf);
+}
+
+.AppleGaramond {
+	font-family: AppleGaramond;
+}

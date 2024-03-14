@@ -81,20 +81,20 @@ def render_infoComputer():
         actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
         imageMac = "Imac_G3_Graphite_side.jpg"
     elif version == "2000OG":
-        title = "Second Generation iMac 2000"
-        description = "This iMac G3 increased the PPC G3 to 500MHz on the higher end models, it also came in varios colors unlike the 1999 Second Gen iMacs."
+        title = "2000 iMac G3"
+        description = "This was the first iMac released in the 21st century. Woah."
         actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
-        imageMac = "Imac_G3_2000_rev_side_lineup.jpg"
+        imageMac = "Imac_G3_5_flavors_side_lineup.jpg"
     elif version == "2001OG":
-        title = "Second Generation iMac 2001"
-        description = "This iMac G3 increased the clock speed of the Power PC G3 chip from 266 MHz to a whopping 333MHz."
+        title = "2001 iMac G3"
+        description = "These iMacs came in some intresting colors, if you've recently picked one of these up check if it's one of the rarier Blue Dalmatian or Flower Power colors."
         actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
-        imageMac = "IMac_G3_Flower_Power_and_Blue_Dalmatian.png"
+        imageMac = "Imac_G3_5_flavors_side_lineup.jpg"
     elif version == "2001Late":
-        title = "Second Generation iMac late 2001 Final Revision"
-        description = "This iMac G3 increased the clock speed of the Power PC G3 chip from 266 MHz to a whopping 333MHz."
+        title = "Late 2001 iMac G3"
+        description = "This was the last ever iMac G3 revision. It's G3 chip ranged from 500MHz to 700MHz."
         actions = "One important thing to be done to any iMac is to replace its clock battery also known as PRAM, or just C Battery. Here is a link to an iFixIt guide on how to do this. The reason we recomend this is due to the fact that these batties tend to leak and cause corrosion over time."
-        imageMac = "IMac_final_palette.png"
+        imageMac = "Imac_G3_5_flavors_side_lineup.jpg"
     return render_template('RepairsForms/iMacG3/iMacG3.html' , title = title, description = description, actions = actions, imageMac = imageMac)
   
     
