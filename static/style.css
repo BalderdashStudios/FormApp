@@ -3,17 +3,20 @@
 }
 .ImageMac {
 	width: 100%;
-	min-width:400px;
+	min-width:200px;
 }
 
 .Icon {
-	width: 50%;
-	min-width: 100px;
+	width: 100%;
+	min-width: 70px;
+	max-width: 130px;
 	transition: transform .2s;
+	text-align: center;
 }
 
 .Icon:hover {
 	transform: scale(1.5);
+	z-index: 2;
 }
 
 .G3Background {
@@ -36,4 +39,23 @@
     max-width: fit-content;
 	margin: auto;
 	background-color: #889abe;
+}
+
+
+.ImgSel {
+	width: 100%;
+	min-width: 70px;
+	max-width: 130px;
+	text-align: center;
+	border-width: 0px;
+}
+
+.ImgSel:hover {
+	border-style: solid;
+    border-width: 5px;
+}
+
+.ImgSel:checked  {
+	border-style: solid;
+    border-width: 5px;
 }
