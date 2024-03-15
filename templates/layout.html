@@ -16,26 +16,28 @@
   </head>
   <body class="G3Background">
      <!--nav bar-->
-	  <nav class="navbar navbar-expand fixed-top navbar-light bg-light p-3">
-	  </nav>
-	  
-	  
-			<nav class="navbar navbar-expand fixed-bottom navBarCustom navbar-dark p-3">
+			<nav class="navbar navbar-expand fixed-bottom navBarCustom navbar-dark p-1">
 				<a class="navbar-brand" href="/">MacHelp</a>
 				  <ul class="navbar-nav">
-					<li class="nav-item display-6">
+					<li class="nav-item">
 					  <a {% if active_page == "home" %} class="nav-link active"{% else %}class="nav-link"{% endif %} href="/">
 						<img src="../static/images/icons/Finder.png" class="Icon">
 					  </a>
 					</li>
-					<li class="nav-item display-6">
-					  <a {% if active_page == "page1" %} class="nav-link active"{% else %}class="nav-link"{% endif %} href="/p1">About Us</a>
+					<li class="nav-item">
+					  <a {% if active_page == "page1" %} class="nav-link active"{% else %}class="nav-link"{% endif %} href="/p1">
+						  <img src="../static/images/icons/Finder.png" class="Icon">
+					  </a>
 					</li>
-					<li class="nav-item display-6">
-					  <a {% if active_page == "page2" %} class="nav-link active"{% else %}class="nav-link"{% endif %} href="/p2">Page 2</a>
+					<li class="nav-item">
+					  <a {% if active_page == "page2" %} class="nav-link active"{% else %}class="nav-link"{% endif %} href="/p2">
+						  <img src="../static/images/icons/Finder.png" class="Icon">
+					  </a>
 					</li>
-					  <li class="nav-item display-6">
-					  <a {% if active_page == "page3" %} class="nav-link active"{% else %}class="nav-link"{% endif %} href="/p3">Repairs</a>
+					 <li class="nav-item">
+					  <a {% if active_page == "page3" %} class="nav-link active"{% else %}class="nav-link"{% endif %} href="/p3">
+						  <img src="../static/images/icons/System.png" class="Icon">
+					  </a>
 					</li>
 				  </ul>
 			</nav>
