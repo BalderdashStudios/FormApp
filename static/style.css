@@ -8,7 +8,12 @@
 
 .Icon {
 	width: 50%;
-	min-width:100px;
+	min-width: 100px;
+	transition: transform .2s;
+}
+
+.Icon:hover {
+	transform: scale(1.5);
 }
 
 .G3Background {
