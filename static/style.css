@@ -49,6 +49,14 @@
 	text-align: center;
 }
 
+.ImgSel:hover {
+	width: 100%;
+	min-width: 70px;
+	max-width: 130px;
+	text-align: center;
+	border: 1px solid black; 
+}
+
 .ImgSelChoice {
 	border: 1px solid black; 
 }
@@ -59,14 +67,25 @@
   opacity: 0;
   width: 0;
   height: 0;
+  display: inline;
+  margin-right: 10px;
 }
 
 /* IMAGE STYLES */
 [type=radio] + img {
   cursor: pointer;
+  display: inline;
+  margin-right: 10px;
 }
 
 /* CHECKED STYLES */
 [type=radio]:checked + img {
   outline: 2px solid #f00;
+  display: inline;
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  display: inline;
+  margin-right: 10px;
 }
