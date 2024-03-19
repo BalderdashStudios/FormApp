@@ -81,14 +81,14 @@
 	min-width: 70px;
 	max-width: 130px;
 	text-align: center;
-	border: 1px solid black; 
+	border: 1px solid #646c7a; 
 	background-color: #67748f;
 	border-radius: 25px;
 	padding: 20px 20px 20px 20px;
 }
 
 .optionSelChoice {
-	border: 1px solid black; 
+	border: 1px solid #646c7a; 
 	background-color: #67748f;
 	border-radius: 25px;
 	padding: 20px 20px 20px 20px;
